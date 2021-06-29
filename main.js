@@ -126,4 +126,5 @@ mainTextShow()
 const projectsAnimation = () => {
     const projectsImage = document.querySelector('.projects-section');
     projectsImage.style.animationName = 'projectsImageAnimation'
+    document.getElementsByTagName('body')[0].style.overflow = 'auto'
 }
