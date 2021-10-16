@@ -26,16 +26,22 @@ body {
 .title-section {
     width: 100%;
     height: 450px;
+    position: relative;
+    background-color: #0F0F0F;
 }
 
-.title-section-img {
+.title-section img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    background-size: cover;
+    position: absolute;
 }
 
 .title-section-text {
     height: 100%;
     width: 500px;
+    position: absolute;
+    z-index: 10;
 }
 
 .title-section-text p {
@@ -59,9 +65,14 @@ body {
     margin-left: 200px;
     font-weight: 600;
     font-size: 30px;
+    color: #EBE9EA;
 }
 
-.projects-section {
+.title-section-text p {
+    color: #EBE9EA;
+}
+
+.projects-img-section {
     width: 100%;
     height: 400px;
     background-color: blanchedalmond;
@@ -69,20 +80,24 @@ body {
     margin-top: 500px;
     animation-duration: 1s;
     animation-fill-mode: both;
+    position: relative;
+    z-index: 10;
 }
 
 .skills-bar-section {
     width: 90%;
     height: 150px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
-    left: 5%;
+    left: 50%;
+    transform: translate(-50%);
     top: -60px;
     border-radius: 30px;
     box-shadow: 0px -10px 40px 10px #b6b6b6;
     background-color: #DDDDDD;
+    z-index: 15;
 }
 
 .skills-bar-section img {
@@ -90,14 +105,70 @@ body {
     margin: 0 20px;
 }
 
+.projects-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-@media (max-width: 1500px) {
+.project {
+    height: 800px;
+    width: 500px;
+    /* background-color: aqua; */
+    margin-top: 50px;
+}
+
+.project-images {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-images img {
+    width: auto;
+    padding: 22px;
+}
+
+.project-images .mobile {
+    width: auto;
+}
+
+.project-description {
+    width: 100%;
+    height: 30%;
+    background-color: blueviolet;
+}
+
+
+@media (max-width: 1600px) {
     .title-section {
-        height: 350px;
+        /* height: 350px; */
+    }
+
+    .title-section img {
+        width: auto;
+        height: 100%;
+        right: 0;
     }
 
     .title-section-text p {
         padding: 15% 0 0 100px;
+    }
+
+    .skills-bar-section {
+        width: 80%;
+        height: 110px;
+        justify-content: space-around;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .skills-bar-section img {
+        width: 70px;
+        margin: 0 20px;
     }
 }
 
