@@ -20,7 +20,7 @@
     }
 
     to {
-        margin-top: -20px;
+        margin-top: 0px;
     }
 }
 
@@ -38,14 +38,15 @@ body {
     width: 100%;
     height: 450px;
     position: relative;
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
 }
 
 .title-section img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     background-size: cover;
     position: absolute;
+    right: 0;
     animation-name: SelfImageShow;
     animation-fill-mode: both;
     animation-duration: 3s;
@@ -88,22 +89,16 @@ body {
 
 .projects-img-section {
     width: 100%;
-    height: 400px;
+    height: auto;
+    opacity: .5;
     background-color: grey;
     box-shadow: 0px -10px 40px 10px #b6b6b6;
     margin-top: 500px;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: both;
     position: relative;
     z-index: 10;
 }
-
-.projects-img-section img {
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-}
-
 
 .skills-bar-section {
     width: 90%;
@@ -179,6 +174,10 @@ body {
     align-items: center;
 }
 
+.flex a {
+    cursor: pointer;
+}
+
 .project-description img {
     width: 30px;
     padding: 0 10px;
@@ -186,10 +185,6 @@ body {
 
 
 @media (max-width: 1600px) {
-    .title-section {
-        /* height: 350px; */
-    }
-
     .title-section img {
         width: auto;
         height: 100%;
