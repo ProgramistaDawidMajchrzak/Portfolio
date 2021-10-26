@@ -125,6 +125,6 @@ mainTextShow()
 
 const projectsAnimation = () => {
     const projectsImage = document.querySelector('.projects-img-section');
-    projectsImage.style.animationName = 'projectsImageAnimation'
-    document.getElementsByTagName('body')[0].style.overflow = 'auto'
+    projectsImage.style.animationName = 'projectsImageAnimation';
+    document.getElementsByTagName('body')[0].style.overflow = 'auto';
 }
