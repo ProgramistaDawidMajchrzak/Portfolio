@@ -14,7 +14,7 @@ const txtThirdBold = 'junior react developer.';
 const spnFourth = document.getElementById('fourth-span');
 const txtFourth = 'Zapraszam do oględzin projektów.';
 const spnName = document.getElementById('name-span');
-const txtName = 'Dawid Majchrzak';
+const txtName = 'Dawid Majchrzak.';
 
 
 let indexText = 0;
